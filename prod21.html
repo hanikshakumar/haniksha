@@ -1,0 +1,145 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Product Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+  <script>
+    function changeProductImage(src) {
+      document.getElementById('main-product-image').src = src;
+    }
+  </script>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+   <div class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
+    <!-- Product Image and Thumbnails -->
+    <div class="flex flex-col items-center lg:w-1/2">
+     <img id="main-product-image" alt="Quality Men's Hoodie" class="w-full max-w-md" height="400" src="C:\Users\Haniksha B\OneDrive\Desktop\SE\images\30.jpg" width="400"/>
+    </div>
+    <!-- Product Details -->
+    <div class="lg:w-1/2">
+     <h2 class="text-2xl font-bold">
+      Midnight stroke print set
+     </h2>
+     <p class="text-2xl font-bold mt-4">
+      ₹2899
+      <p>
+      </span>
+     </p>
+     <p class="mt-4 text-gray-700">
+      Ooooh, a Midnight Stroke Print Set sounds like one of those artsy-meets-stylish pieces that’s totally K-fashion editorial worthy. It gives off chic, dreamy, and slightly mysterious vibes.
+     </p>
+     <div class="mt-4">
+      <p>
+       <strong>
+        Type:
+       </strong>
+      Oversizedd fit
+      </p>
+      <p>
+       <strong>
+        Color:
+       </strong>
+     Colorblock
+      </p>
+      <p>
+       <strong>
+        Material:
+       </strong>
+     Rayon
+      </p>
+      <p>
+       <strong>
+        Brand:
+       </strong>
+       Rodebjer
+      </p>
+     </div>
+     <div class="mt-4 flex items-center space-x-4">
+      <div>
+       <label class="block text-gray-700" for="size">
+        Size
+       </label>
+       <select class="border rounded px-4 py-2" id="size">
+        <option>
+            XS
+        </option>
+        <option>
+        S
+        </option>
+        <option>
+        M
+        </option>
+        <option>
+        L
+        </option>
+        <option>
+        XL
+        </option>
+        <option>
+        XL
+        </option>
+        <option>
+        XXL
+        </option>
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-gray-700" for="quantity">
+        Quantity
+       </label>
+       <div class="flex items-center space-x-2">
+        <button class="border rounded px-2 py-1">
+         -
+        </button>
+        <input class="border rounded px-4 py-2 w-16 text-center" id="quantity" type="text" value="14"/>
+        <button class="border rounded px-2 py-1">
+         +
+        </button>
+       </div>
+      </div>
+     </div>
+     <div class="mt-4 flex space-x-4">
+      <button class="bg-yellow-500 text-white px-4 py-2 rounded">
+       BUY NOW
+      </button>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">
+       ADD TO CART
+      </button>
+      <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded">
+       SAVE
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Tabs and Content -->
+   <div class="mt-8">
+     <div class="flex space-x-4 border-b">
+      <button class="px-4 py-2 text-blue-600 border-b-2 border-blue-600">
+       SHIPPING INFO
+      </button>
+     </div>
+     <div id="content" class="p-4">
+        Estimated delivery= 7-april-2025
+     Delivery to=bangalore-560077
+     </div>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white mt-8">
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .hover-pop {
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        .hover-pop:hover {
+            transform: scale(1.05);
+            background-color: #ad845b;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-md mx-auto bg-white">
+        <!-- Header -->
+        <div class="flex items-center justify-between p-4 border-b">
+            <i class="fas fa-arrow-left"></i>
+            <h1 class="text-center flex-1 text-lg font-semibold">Customer Service</h1>
+            <div class="w-4"></div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="p-4">
+            <div class="relative">
+                <input type="text" class="w-full p-2 pl-10 border rounded-full" placeholder="Search">
+                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Help Section -->
+        <div class="px-4 py-2 text-gray-500">We're Here To Help !</div>
+
+        <!-- Grid Items -->
+        <div class="grid grid-cols-2 gap-4 p-4">
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-user text-2xl mb-2"></i>
+                <span>Account</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-file-alt text-2xl mb-2"></i>
+                <span>Orders</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-credit-card text-2xl mb-2"></i>
+                <span>Payments</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-truck text-2xl mb-2"></i>
+                <span>Delivery</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-undo text-2xl mb-2"></i>
+                <span>Returns</span>
+            </div>
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow hover-pop">
+                <i class="fas fa-ruler text-2xl mb-2"></i>
+                <span>Sizing</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="p-4 text-center text-gray-500">
+            <div>Contact Us:</div>
+            <i class="fas fa-headset text-2xl mt-2"></i>
+        </div>
+    </div>
+</body>
+</html>
